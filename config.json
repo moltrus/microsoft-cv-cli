@@ -1,0 +1,84 @@
+{
+    "headers":
+    {
+        "content-type": "application/json",
+        "X-RapidAPI-Key": "<YOUR_RAPIDAPI_KEY>",
+        "X-RapidAPI-Host": "microsoft-computer-vision3.p.rapidapi.com"
+    },
+
+    "url":"https://microsoft-computer-vision3.p.rapidapi.com/{}/",
+
+    "defaults":
+    [
+        {
+            "language":"en",
+            "height":100,
+            "width":100,
+            "detectOrientation":true,
+            "maxCandidates":1,
+            "descriptionExclude[0]":null,
+            "visualFeatures[0]":null,
+            "details[0]":null,
+            "smartCropping":null,
+            "save":"thumbnail_{}.png"
+        }
+    ],
+
+    "auto":false,
+
+    "functions":
+    {
+        "analyze":"1",
+        "describe":"2",
+        "detect":"3",
+        "models":"4",
+        "ocr":"5",
+        "tag":"6",
+        "generateThumbnail":"7",
+        "areaOfInterest":"8"
+    },
+
+    "func_querystring":
+    {
+        "1":[["language","%s"],["descriptionExclude[0]","%s"],["visualFeatures[0]","%s"],["details[0]","%s"]],
+        "2":[["language","%s"],["maxCandidates","%s"],["descriptionExclude[0]","%s"]],
+        "3":[[]],
+        "4":[["language","%s"]],
+        "5":[["detectOrientation","%s"],["language","%s"]],
+        "6":[["language","%s"]],
+        "7":[["width","%s"],["height","%s"],["smartCropping","%s"]],
+        "8":[[]]
+    },
+
+    "models":
+    {
+        "1":"landmarks",
+        "2":"celebrities"
+    },
+
+    "visualFeatures":
+    {
+        "1":"Categories",
+        "2":"Tags",
+        "3":"Description",
+        "4":"Faces",
+        "5":"Color",
+        "6":"Adult",
+        "7":"Objects",
+        "8":"Brands"
+    },
+
+    "languages":
+    {
+        "English":"en",
+        "Spanish":"es",
+        "Japanese":"ja",
+        "Portuguese":"pt",
+        "Simplified Chinese":"zh"
+    },
+
+    "payload":
+    {
+        "url": "%s"
+    }
+}
