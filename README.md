@@ -22,42 +22,39 @@ The script can be used from the command line by passing arguments to specify the
 # Functions
 The following functions from the API are supported:
 
-- **Analyze Image**  
+- **Analyze Image**  \
   `python main.py --analyze <image_url>`
 
   Extract visual features, categories, tags, descriptions, faces, etc.
 
-- **Describe Image**  
+- **Describe Image**  \
   `python main.py --describe <image_url> --count 3`
 
   Generate a description of the image in human readable language.
 
-- **Detect Objects**  
+- **Detect Objects**  \
   `python main.py --detect <image_url>`
   
   Detect common objects in an image.
   
-- **Use Recognition Model**
+- **Use Recognition Model** \
   `python main.py --models <image_url> --use landmarks`
 
   Specify a domain-specific model to recognize particular classes of images.
   
-- **OCR**  
+- **OCR**  \
   `python main.py --ocr <image_url>`
   
   Extract printed text in an image using Optical Character Recognition.
   
-- **Generate Tags**
+- **Generate Tags** \
   `python main.py --tag <image_url>`
 
   Generate tags based on image content.
   
-- **Generate Thumbnail**  
+- **Generate Thumbnail**  \
   `python main.py --thumbnail <image_url> --width 100 --height 100`
 
   Generate a thumbnail image with customizable dimensions.
 
 See the script code or `--help` for more details on arguments and options available for each function.
-
-# Example
-python main.py --analyze "https://example.com/images/cat.jpg"
